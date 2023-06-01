@@ -4,6 +4,9 @@
   "description": "",
   "homepage": ".",
   "main": "index.js",
+  "engines": {
+    "node": "v18.16.0"
+  },
   "scripts": {
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production",

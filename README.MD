@@ -1,6 +1,7 @@
 # React with webpack from scratch
 
-[x] npm init -y
+[x] npm init -y  
+[x] git init  
 
 ## Babel config
 
@@ -41,6 +42,13 @@ It builds on top of a new webpack v5 feature and requires webpack 5 to work.
 [x] update package.json  
   [x] build script  
   [x] serve script  
+
+## Github
+
+[x] create .nvmrc file  
+[x] Add node version info add package.json engines fields  
+[x] Create reprository at github  
+[x] Create .gitignore file  
 
 ## CICD
 
