@@ -2,6 +2,7 @@
   "name": "react_webpack_scratch",
   "version": "1.0.0",
   "description": "",
+  "homepage": ".",
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --mode development",
@@ -21,6 +22,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",

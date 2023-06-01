@@ -41,3 +41,12 @@ It builds on top of a new webpack v5 feature and requires webpack 5 to work.
 [x] update package.json  
   [x] build script  
   [x] serve script  
+
+## CICD
+
+[x] create yaml file .github\workflows\deployToPage.yaml  
+[x] install devDependencies gh-pages  
+[x] update package.js homepage  
+[x] update package.js deploy script  
+[x] create a token https://github.com/settings/tokens  
+[x] create a env variable at https://github.com/{yourname}/{repro}/settings/secrets/actions and paste the value from last step token  
