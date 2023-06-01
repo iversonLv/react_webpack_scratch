@@ -1,8 +1,11 @@
 const path = require('path')
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
+    // the index bulde all /\.(js|jsx)$/ except node_modules into dist, remember link to index.html
     filename: 'index.bundle.js'
   },
   devServer: {
@@ -24,11 +27,19 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          // This will create a inline style at page head tag
+          // 'style-loader',
+          // here will extract css to a separated main.css by default, remember link to index.html
+          MiniCssExtractPlugin.loader,
+          // conver css to style
           'css-loader',
+          // convert scss file to css
           'sass-loader'
         ]
-      }
+      },
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin()
+  ]
 }

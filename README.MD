@@ -20,6 +20,13 @@
       [x] set babel-loader rules
       [x] set scss rules
 
+### Webpack performance
+
+[x] mini-css-extract-plugin  
+>This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.  
+It builds on top of a new webpack v5 feature and requires webpack 5 to work.
+  [x] Add main.css to index.html
+
 ## React
 
 [x] install react and react-dom for react
