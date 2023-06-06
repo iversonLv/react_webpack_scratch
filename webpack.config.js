@@ -1,12 +1,11 @@
-const path = require('path')
-
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     // the index bulde all /\.(js|jsx)$/ except node_modules into dist, remember link to index.html
-    filename: 'index.bundle.js'
+    filename: 'index.bundle.js',
   },
   devServer: {
     static: {
@@ -21,8 +20,8 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.scss$/,
@@ -34,12 +33,15 @@ module.exports = {
           // conver css to style
           'css-loader',
           // convert scss file to css
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
-    ]
+    ],
   },
   plugins: [
-    new MiniCssExtractPlugin()
-  ]
-}
+    new MiniCssExtractPlugin(),
+  ],
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
+};

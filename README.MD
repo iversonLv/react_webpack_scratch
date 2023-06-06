@@ -36,6 +36,12 @@ It builds on top of a new webpack v5 feature and requires webpack 5 to work.
 [x] create index.html  
   [x] put div#root  
   [x] put webpack output file name to script  
+[x] prop-types
+
+[x] React ESlints  
+  [x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
+  [x] npm install eslint-plugin-react-hooks --save-dev 
+  [x] Fixed the issues after config
 
 ## package.json config
 
