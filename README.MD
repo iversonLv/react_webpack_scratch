@@ -49,7 +49,26 @@ PS: this is really need for the whole team otherwise, push codes might messup
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
-## Typescript?
+## [Typescript](https://www.typescriptlang.org/)
+
+Now the TS only type check, as webpack babel will control the compiler
+
+[x] `npm i --save-dev typescript`  
+[x] Update package.json  
+[x] Configure tsconfig.json  
+[x] `npm install --save-dev @babel/preset-typescript` this is for ./.babelrc
+
+Below 2 npms are for eslint to check ts,  
+after installed, need update script 'lint' with '--ext .js,.ts.,tsx'  
+[x] [`npm i --save-d @typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+
+- An ESLint plugin which provides lint rules for TypeScript codebases.
+
+[x] [`npm i --save-d @typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+
+- An ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code.
+  [x] Add '--ext .js,.ts.,tsx' to package.json script.lint
+  [x] Update .eslintrc with overrides
 
 ## [React](https://react.dev/)
 
@@ -92,4 +111,20 @@ PS: this is really need for the whole team otherwise, push codes might messup
 
 Everytime, we need run eslint and format(prettier) manually, could it be format after save?
 Prettier might have some confit with eslint
-use eslint-config-prettier for eslintrc extends
+[x] use eslint-config-prettier for eslintrc extends
+
+[] `npm run build` show below error
+
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <5.1.0
+
+YOUR TYPESCRIPT VERSION: 5.1.3
+
+Please only submit bug reports when using the officially supported version.
+
+=============

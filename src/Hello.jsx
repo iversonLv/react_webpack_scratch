@@ -6,9 +6,8 @@ const Hello = ({firstname, lastName}) => {
 		window.localStorage.getItem('name') || ''
 	)
 	React.useEffect(() => {
-		console.log(2)
 		window.localStorage.setItem('name', name)
-	}, [])
+	}, [name])
 	return (
 		<>
 			<input value={name} onChange={(e) => setName(e.target.value)} />
