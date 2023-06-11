@@ -1,60 +1,83 @@
 # React with webpack from scratch
 
 [x] npm init -y  
-[x] git init  
+[x] git init
 
-## Babel config
+## [Babel](https://babeljs.io/) config
 
-[x] install babel devDependencies 
+[x] install babel devDependencies
+
 > @babel/core  
-  @babel/preset-react  (for .babelrc)  
-  babel-loader (for webpack)  
-  [x] config .babelrc [babelrc present info](https://babeljs.io/docs/presets)  
+>  @babel/preset-react (for .babelrc)  
+>  babel-loader (for webpack)  
+>  [x] config .babelrc [babelrc present info](https://babeljs.io/docs/presets)
 
-## Webpack config
+## [Webpack](https://webpack.js.org/) config
 
-[x]  install webpack webpack-cli devDependencies
-  [x] config webpack.config.js
-    [x] set output
-    [x] set devServer
-    [x] set module
-      [x] set babel-loader rules
-      [x] set scss rules
+[x] install webpack webpack-cli devDependencies
+[x] config webpack.config.js
+[x] set output
+[x] set devServer
+[x] set module
+[x] set babel-loader rules
+[x] set scss rules
 
 ### Webpack performance
 
-[x] mini-css-extract-plugin  
->This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.  
-It builds on top of a new webpack v5 feature and requires webpack 5 to work.
-  [x] Add main.css to index.html
+[x] mini-css-extract-plugin
 
-## React
+> This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.  
+> It builds on top of a new webpack v5 feature and requires webpack 5 to work.
+> [x] Add main.css to index.html
+
+## Test
+
+[] [Jest](https://jestjs.io/)  
+[] [React Testing Library](https://testing-library.com/)
+
+## [Prettier](https://prettier.io/)
+
+PS: this is really need for the whole team otherwise, push codes might messup
+
+[x] Install  
+[x] Add script at package.json  
+[x] .prettierrc
+[x] VSC plugin
+
+- VSC plugin
+  prettier -> setting -> json
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+## Typescript?
+
+## [React](https://react.dev/)
 
 [x] install react and react-dom for react
 [x] create index.js  
-  [x] required the html  
+ [x] required the html  
 [x] create index.html  
-  [x] put div#root  
-  [x] put webpack output file name to script  
+ [x] put div#root  
+ [x] put webpack output file name to script  
 [x] prop-types
 
 [x] React ESlints  
-  [x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
-  [x] npm install eslint-plugin-react-hooks --save-dev 
-  [x] Fixed the issues after config
+ [x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
+ [x] npm install eslint-plugin-react-hooks --save-dev
+[x] Fixed the issues after config
 
 ## package.json config
 
 [x] update package.json  
-  [x] build script  
-  [x] serve script  
+ [x] build script  
+ [x] serve script
 
 ## Github
 
 [x] create .nvmrc file  
 [x] Add node version info add package.json engines fields  
 [x] Create reprository at github  
-[x] Create .gitignore file  
+[x] Create .gitignore file
 
 ## CICD
 
@@ -63,4 +86,10 @@ It builds on top of a new webpack v5 feature and requires webpack 5 to work.
 [x] update package.js homepage  
 [x] update package.js deploy script  
 [x] create a token https://github.com/settings/tokens  
-[x] create a env variable at https://github.com/{yourname}/{repro}/settings/secrets/actions and paste the value from last step token  
+[x] create a env variable at https://github.com/{yourname}/{repro}/settings/secrets/actions and paste the value from last step token
+
+## TODO
+
+Everytime, we need run eslint and format(prettier) manually, could it be format after save?
+Prettier might have some confit with eslint
+use eslint-config-prettier for eslintrc extends
