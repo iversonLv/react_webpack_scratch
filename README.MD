@@ -93,6 +93,10 @@ after installed, need update script 'lint' with '--ext .js,.ts.,tsx'
 
 ## Github
 
+[x] [husky](https://www.npmjs.com/package/husky)
+
+- Make sure somebody make any commit the code
+
 [x] create .nvmrc file  
 [x] Add node version info add package.json engines fields  
 [x] Create reprository at github  
@@ -109,11 +113,11 @@ after installed, need update script 'lint' with '--ext .js,.ts.,tsx'
 
 ## TODO
 
-Everytime, we need run eslint and format(prettier) manually, could it be format after save?
 Prettier might have some confit with eslint
 [x] use eslint-config-prettier for eslintrc extends
 
 [] `npm run build` show below error
+[] husky ensure pre-commit, everybody at the same page
 
 =============
 
