@@ -41,6 +41,12 @@
 > It builds on top of a new webpack v5 feature and requires webpack 5 to work.
 > [x] Add main.css to index.html
 
+This is enhance the css, example, it has some fallback style for the css, example, --text: red, finally, there is a fallback style, color: red; color: var(--text)
+
+> [x] [postcss](https://postcss.org/)  
+> [x] postcss-preset-env(for .postcssrc)
+> [x] postcss-loader (for webpack.config.js)
+
 ## Test
 
 [] [Jest](https://jestjs.io/)  

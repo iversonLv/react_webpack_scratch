@@ -1,13 +1,15 @@
-:root {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@use 'global';
+@use 'variables';
 
 div {
-	border: 1px solid blue;
+	border: 1px solid rgb(136, 255, 0);
 
 	h1 {
+		color: var(--text);
+		background-color: variables.$bg;
+	}
+
+	::placeholder {
 		color: red;
 	}
 }

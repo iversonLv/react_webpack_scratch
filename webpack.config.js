@@ -15,6 +15,7 @@ module.exports = {
 		compress: true,
 		port: 9000,
 	},
+	devtool: 'source-map',
 	module: {
 		// load babel
 		rules: [
@@ -29,7 +30,7 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.scss$/,
+				test: /\.s?css$/,
 				use: [
 					// This will create a inline style at page head tag
 					// 'style-loader',
@@ -37,6 +38,8 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					// conver css to style
 					'css-loader',
+					// postcss
+					'postcss-loader',
 					// convert scss file to css
 					'sass-loader',
 				],

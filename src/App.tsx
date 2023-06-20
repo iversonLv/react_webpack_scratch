@@ -8,6 +8,7 @@ const App = () => (
 	<div>
 		<h1>Hi, welcome</h1>
 		<RouterProvider router={Routers} />
+		<input type="text" placeholder="fill the input please" />
 	</div>
 )
 
