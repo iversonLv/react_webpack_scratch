@@ -16,10 +16,14 @@ module.exports = {
 		port: 9000,
 	},
 	module: {
+		// load babel
 		rules: [
 			{
+				// what type of files for
 				test: /\.(js|jsx|ts|tsx)$/,
+				// exclude files
 				exclude: /node_modules/,
+				// what loader for translate the test files
 				use: {
 					loader: 'babel-loader',
 				},

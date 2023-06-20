@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Hello = ({firstname, lastName}) => {
 	const [name, setName] = React.useState(
@@ -10,6 +11,7 @@ const Hello = ({firstname, lastName}) => {
 	}, [name])
 	return (
 		<>
+			<Link to="/">Home</Link>
 			<input value={name} onChange={(e) => setName(e.target.value)} />
 			Hello {firstname} - {lastName}
 			{name}

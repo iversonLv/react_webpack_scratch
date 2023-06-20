@@ -1,7 +1,18 @@
 # React with webpack from scratch
 
-[x] npm init -y  
-[x] git init
+## Github
+
+[x] git init  
+-- [x] could push first version to github or not  
+[x] [husky](https://www.npmjs.com/package/husky)
+
+- Make sure somebody make any commit the code
+  [x] create .nvmrc file  
+  [x] Add node version info add package.json engines fields  
+  [x] Create reprository at github  
+  [x] Create .gitignore file
+
+[x] npm init -y
 
 ## [Babel](https://babeljs.io/) config
 
@@ -19,7 +30,7 @@
 [x] set output
 [x] set devServer
 [x] set module
-[x] set babel-loader rules
+[x] set babel-loader rules (need to config .babelrc file)
 [x] set scss rules
 
 ### Webpack performance
@@ -66,41 +77,30 @@ after installed, need update script 'lint' with '--ext .js,.ts.,tsx'
 
 [x] [`npm i --save-d @typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
 
-- An ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code.
-  [x] Add '--ext .js,.ts.,tsx' to package.json script.lint
+- An ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code.  
+  [x] Add '--ext .js,.ts.,tsx' to package.json script.lint  
   [x] Update .eslintrc with overrides
 
 ## [React](https://react.dev/)
 
 [x] install react and react-dom for react
 [x] create index.js  
- [x] required the html  
+----[x] required the html  
 [x] create index.html  
- [x] put div#root  
- [x] put webpack output file name to script  
+----[x] put div#root  
+----[x] put webpack output file name to script  
 [x] prop-types
 
 [x] React ESlints  
- [x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
- [x] npm install eslint-plugin-react-hooks --save-dev
+----[x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
+----[x] npm install eslint-plugin-react-hooks --save-dev
 [x] Fixed the issues after config
 
 ## package.json config
 
 [x] update package.json  
- [x] build script  
- [x] serve script
-
-## Github
-
-[x] [husky](https://www.npmjs.com/package/husky)
-
-- Make sure somebody make any commit the code
-
-[x] create .nvmrc file  
-[x] Add node version info add package.json engines fields  
-[x] Create reprository at github  
-[x] Create .gitignore file
+----[x] build script  
+----[x] serve script
 
 ## CICD
 
@@ -117,7 +117,7 @@ Prettier might have some confit with eslint
 [x] use eslint-config-prettier for eslintrc extends
 
 [] `npm run build` show below error
-[] husky ensure pre-commit, everybody at the same page
+[] husky ensure pre-commit, everybody at the same page, not work still
 
 =============
 

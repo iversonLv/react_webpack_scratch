@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.scss'
 
-import Hello from './Hello'
+import {RouterProvider} from 'react-router-dom'
+import Routers from './routers'
 
 const App = () => (
 	<div>
 		<h1>Hi, welcome</h1>
-		<Hello firstname="iverson" lastName="lv" />
+		<RouterProvider router={Routers} />
 	</div>
 )
 
