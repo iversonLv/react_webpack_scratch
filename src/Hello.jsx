@@ -14,6 +14,7 @@ const Hello = ({firstname, lastName}) => {
 			<Link to="/">Home</Link>
 			<input value={name} onChange={(e) => setName(e.target.value)} />
 			Hello {firstname} - {lastName}
+			update check whether it cache the bundle with hash
 			{name}
 		</>
 	)

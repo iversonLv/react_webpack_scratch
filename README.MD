@@ -1,5 +1,8 @@
 # React with webpack from scratch
 
+This is a demo project which contains all necessary dependencies for a 0-1 react project.
+Though we have create-react-app or other CLI for react app to serve, build, however from scracth could learn dive deep about the knowledge behind the sence.
+
 ## Github
 
 [x] git init  
@@ -11,6 +14,7 @@
   [x] Add node version info add package.json engines fields  
   [x] Create reprository at github  
   [x] Create .gitignore file
+  [x] .browserslistrc
 
 [x] npm init -y
 
@@ -35,6 +39,15 @@
 [x] set scss rules
 [x] set babel-loader rules (for reactjs, need to config .babelrc file)
 
+[x] [html webpack plugin](https://webpack.js.org/plugins/html-webpack-plugin/#root) and clean  
+ `npm i -D html-webpack-pulgin`
+
+> [x] webpack.config.js config the plugin
+> [x] create the index.html template
+> [x] enhance the bundle file inject to index.html
+> [x] clean build before build
+> [x] cache the file
+
 ### Webpack performance
 
 [x] mini-css-extract-plugin
@@ -48,7 +61,6 @@ This is enhance the css, example, it has some fallback style for the css, exampl
 > [x] [postcss](https://postcss.org/)  
 > [x] postcss-preset-env(for .postcssrc)
 > [x] postcss-loader (for webpack.config.js)
-> [x] .browserslistrc
 
 ## [Prettier](https://prettier.io/)
 
@@ -128,6 +140,7 @@ Prettier might have some confit with eslint
 
 [] `npm run build` show below error
 [] husky ensure pre-commit, everybody at the same page, not work still
+[] separated webpack files for common, dev, prop.
 
 =============
 

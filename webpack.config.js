@@ -1,13 +1,15 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	output: {
-		path: path.join(__dirname, '/dist'),
+		path: path.resolve(__dirname, 'dist'),
 		// the index bulde all /\.(js|jsx)$/ except node_modules into dist, remember link to index.html
-		filename: 'index.bundle.js',
-		assetModuleFilename: 'images/[hash][ext][query]',
+		filename: '[name].bundle.[fullhash].js',
+		assetModuleFilename: 'images/[contenthash][ext][query]',
+		clean: true,
 	},
 	devServer: {
 		static: {
@@ -71,7 +73,13 @@ module.exports = {
 			},
 		],
 	},
-	plugins: [new MiniCssExtractPlugin(), new ESLintPlugin()],
+	plugins: [
+		new MiniCssExtractPlugin(),
+		new ESLintPlugin(),
+		new HtmlWebpackPlugin({
+			template: './src/index.html',
+		}),
+	],
 	resolve: {
 		extensions: ['', '.js', '.jsx', '.ts', '.tsx'],
 	},
