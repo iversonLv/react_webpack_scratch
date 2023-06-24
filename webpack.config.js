@@ -38,7 +38,7 @@ module.exports = {
 					// here will extract css to a separated main.css by default, remember link to index.html
 					{
 						loader: MiniCssExtractPlugin.loader,
-						options: {publicPath: ''},
+						options: {publicPath: ''}, // here is for css image loading path issue
 					},
 					// conver css to style
 					'css-loader',
