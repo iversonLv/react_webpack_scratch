@@ -8,6 +8,8 @@ div {
 	h1 {
 		color: var(--text);
 		background-color: variables.$bg;
+		background: url(./assets/images/Full-stack-designer-graphic.jpg) no-repeat 0
+			0;
 	}
 
 	::placeholder {

@@ -30,8 +30,10 @@
 [x] set output
 [x] set devServer
 [x] set module
-[x] set babel-loader rules (need to config .babelrc file)
+[x] load images
+
 [x] set scss rules
+[x] set babel-loader rules (for reactjs, need to config .babelrc file)
 
 ### Webpack performance
 
@@ -47,11 +49,6 @@ This is enhance the css, example, it has some fallback style for the css, exampl
 > [x] postcss-preset-env(for .postcssrc)
 > [x] postcss-loader (for webpack.config.js)
 > [x] .browserslistrc
-
-## Test
-
-[] [Jest](https://jestjs.io/)  
-[] [React Testing Library](https://testing-library.com/)
 
 ## [Prettier](https://prettier.io/)
 
@@ -90,7 +87,8 @@ after installed, need update script 'lint' with '--ext .js,.ts.,tsx'
 
 ## [React](https://react.dev/)
 
-[x] install react and react-dom for react
+[x] .babelrc `["@babel/preset-react", {"runtime": "automatic"}]`  
+[x] install react and react-dom for react  
 [x] create index.js  
 ----[x] required the html  
 [x] create index.html  
@@ -102,6 +100,11 @@ after installed, need update script 'lint' with '--ext .js,.ts.,tsx'
 ----[x] npm init @eslint/config (lists of options for choose) [more info](https://eslint.org/)  
 ----[x] npm install eslint-plugin-react-hooks --save-dev
 [x] Fixed the issues after config
+
+## Test
+
+[] [Jest](https://jestjs.io/)  
+[] [React Testing Library](https://testing-library.com/)
 
 ## package.json config
 
