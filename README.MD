@@ -46,6 +46,7 @@ This is enhance the css, example, it has some fallback style for the css, exampl
 > [x] [postcss](https://postcss.org/)  
 > [x] postcss-preset-env(for .postcssrc)
 > [x] postcss-loader (for webpack.config.js)
+> [x] .browserslistrc
 
 ## Test
 
