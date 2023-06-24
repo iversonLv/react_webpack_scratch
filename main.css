@@ -1,1 +1,3 @@
-:root{margin:0;padding:0;box-sizing:border-box}div{border:1px solid blue}div h1{color:red}
+:root{margin:0;padding:0;box-sizing:border-box;--text: grey}div{border:1px solid #8f0;display:flex}div h1{color:grey;color:var(--text);background-color:#add8e6;background:url(images/ed347552314de5fba7a7.jpg) no-repeat 0 0}div ::-moz-placeholder{color:red}div ::placeholder{color:red}
+
+/*# sourceMappingURL=main.css.map*/
